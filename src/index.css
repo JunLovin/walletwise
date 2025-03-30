@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    --font-open: 'Open Sans', sans-serif;
+}
+
+@layer components {
+    li {
+        @apply mx-4 relative;
+    }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --yellow-gold: #F39C12;
+    --dark-blue-primary: #2C3E50;
+    --light-gray: #BDC3C7;
+    --gray-background-light: #ECF0F1;
+    --dark-background-dark-mode: #2C3338;
+    --light-gray-dark-mode: #E8F0FE;
+    --light-blue-dark-mode: #5DADE2;
+}
+
+.navBar::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--yellow-gold);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.navBar:hover::before {
+    width: 100%;
+}
