@@ -5,7 +5,7 @@ import CardsContainer from '@components/CardsContainer'
 function MainPage() {
     return (
         <>
-        <div className="w-[80%] mx-auto px-12 mt-8 mb-12">
+        <div className="w-[80%] mx-auto px-12 mt-8 mb-20">
         <LastArticle />
         <CardsContainer />
         </div>
