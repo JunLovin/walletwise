@@ -1,6 +1,5 @@
 import MainPage from '@pages/MainPage'
 import Header from '@components/Header'
-import Footer from '@components/Footer'
 import { Outlet, useLocation } from 'react-router'
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
     <Header />
     <Outlet />
     {mainPage && <MainPage />}
-    <Footer />
     </>
   )
 }
